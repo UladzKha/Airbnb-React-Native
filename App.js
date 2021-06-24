@@ -1,25 +1,14 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
+import 'react-native-gesture-handler';
 import React from 'react';
-import {Text, SafeAreaView} from 'react-native';
-import HomeScreen from './src/screens/Home';
-
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Router from './src/navigation/Router';
+import {withAuthenticator} from 'aws-amplify-react-native';
 
 const App = () => {
   return (
     <>
-      <SafeAreaView>
-        <HomeScreen />
-      </SafeAreaView>
+      <Router />
     </>
   );
 };
 
-export default App;
+export default withAuthenticator(App);

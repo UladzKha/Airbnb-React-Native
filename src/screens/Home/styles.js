@@ -1,7 +1,8 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet, Dimensions, Platform} from 'react-native';
 
 const margin25 = 25;
 const bold = 'bold';
+const whiteColor = '#ffffff';
 
 const styles = StyleSheet.create({
   image: {
@@ -13,12 +14,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 80,
     fontWeight: bold,
-    color: '#ffffff',
+    color: whiteColor,
     width: '70%',
     marginLeft: margin25,
   },
   button: {
-    backgroundColor: '#ffffff',
+    backgroundColor: whiteColor,
     width: 200,
     marginLeft: margin25,
     marginTop: margin25,
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   },
   searchButton: {
     position: 'absolute',
-    backgroundColor: '#ffffff',
+    backgroundColor: whiteColor,
     width: Dimensions.get('screen').width - 20,
     height: 60,
     borderRadius: 30,
